@@ -76,4 +76,4 @@ def displayPasswordCheck(password : str) -> None:
     print(f"Strength: {display['strength']}")
     print(f"Entropy: {display['entropy']}")
 
-displayPasswordCheck("Rybixe_29*")
+displayPasswordCheck("da3de5_!jeff")

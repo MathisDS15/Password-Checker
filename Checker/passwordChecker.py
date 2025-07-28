@@ -53,11 +53,11 @@ def passwordChecker(password : str) -> dict:
 
         if password_checker_info["entropy"] >= 125:
             password_checker_info["strength"] = "Very Strong"
-        elif password_checker_info["strength"] >= 60:
+        elif password_checker_info["entropy"] >= 60:
             password_checker_info["strength"] = "Strong"
-        elif password_checker_info["strength"] >= 33:
+        elif password_checker_info["entropy"] >= 33:
             password_checker_info["strength"] = "Medium"
-        elif password_checker_info["strength"] >= 28:
+        elif password_checker_info["entropy"] >= 28:
             password_checker_info["strength"] = "Weak"
         else:
             password_checker_info["strength"] = "Very Weak"

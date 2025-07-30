@@ -70,10 +70,10 @@ def displayPasswordCheck(password : str) -> None:
 
     display = passwordChecker(password)
     print(f"Analyse this password: {password}")
-    print(f"Validity: {"Valid" if display["valid"] else "Invalid"}")
-    if display["errors"]:
-        print("Errors: " + display['errors'])
+    print(f"Validity: {"Valid" if display["valid"] else "Invalid "}")
     print(f"Strength: {display['strength']}")
-    print(f"Entropy: {display['entropy']}")
+    print(f"Entropy: {display['entropy']}\n\n")
 
 displayPasswordCheck("da3de5_!jeff")
+displayPasswordCheck("12345678")
+displayPasswordCheck("A1b2C4!")

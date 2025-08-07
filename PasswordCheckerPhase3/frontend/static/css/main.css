@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #1a73e8;
+    color: white;
+    padding: 30px 0 20px 0;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    margin: 8px;
+    font-size: 1.1em;
+    background-color: #34a853;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.button:hover, .check-button:hover {
+    background-color: #218838;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.information, .password_test, .results {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+input[type="password"] {
+    padding: 12px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+}
+
+.check-button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .button, .check-button {
+        font-size: 1em;
+        padding: 10px 16px;
+    }
+}

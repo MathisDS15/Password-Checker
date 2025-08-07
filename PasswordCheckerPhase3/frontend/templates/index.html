@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='frontend/static/css/main.css') }}"/>
     <title>Password Checker</title>
 </head>
 <body>
     <header>
-        <div class="title">
-            <h1>Password Checker for fun</h1>
-        </div>
-        <div class="button_information">
-            <button>Home</button>
-            <button>Check your password</button>
-            <button>GitHub page</button>
-            <button>i</button>
-        </div>
+        <h1>Password Checker</h1>
+        <nav>
+            <a href="/" class="button">Home</a>
+            <a href="/check" class="button">Check Password</a>
+            <a href="https://github.com/MathisDS15" class="button" target="_blank">GitHub</a>
+            <a href="/help" class="button">Help</a>
+        </nav>
     </header>
-    <div>
-
-    </div>
+    <main class="container">
+        <section class="information">
+            <p>Hello! This website helps you check if your password is strong and safe.<br>
+            Created by Mathis, engineering student in France.</p>
+        </section>
+        <section class="password_test">
+            <p>Test your password and see if it is as strong as the Great Wall of China!</p>
+        </section>
+        <form action="/check" method="post" class="password-form">
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="password" placeholder="Type your password here" required>
+            <button type="submit" class="check-button">Check</button>
+        </form>
+    </main>
 </body>
 </html>

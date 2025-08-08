@@ -4,6 +4,7 @@ Created by Mathis DA SILVA
 
 
 ## Introduction 
+---
 I created this project to see if our passwords are strong and safe. So, I develope this project in 3 phases.
 The first represent the base of the project. We find all aspects of password: validity, strrength and entropy. The second add a new fonctionality to know if it is pwned. The third is a web application with Flask.
 ---
@@ -18,6 +19,7 @@ It checks if your password is valid (length, characters), calculates its strengt
 - Enter your password when prompted.
 - The script will show you the validity, strength, and entropy of your password.
 
+
 ## Password Checker Phase 2
 This phase adds a check to see if your password has been found in public data breaches ("pwned").
 It uses the Have I Been Pwned API.
@@ -27,6 +29,7 @@ It uses the Have I Been Pwned API.
 - Run the script 'passwordCheckerPhase2.py' in your terminal.
 - Enter your password when prompted.
 - The script will show you the validity, strength, entropy, and whether your password has been pwned.
+
 
 ## Password Checker Phase 3
 This phase is a web application built with Flask.

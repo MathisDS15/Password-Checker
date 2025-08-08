@@ -1,13 +1,12 @@
 from flask import Flask, render_template, request, url_for, redirect
 from PasswordCheckerPhase3.backend.passwordCheckerPhase3 import passwordChecker
-import os
 
 app = Flask(__name__, template_folder='frontend/templates', static_folder='frontend/static')
 
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/check', methods=['GET','POST'])
 def check_password():
@@ -23,8 +22,12 @@ def check_password():
             "Very Weak": "Your password is very weak. It needs significant improvement."
         }
 
-        return render_template('passwordResult.html', strength_message=strength_message[result['strength']],
+        return render_template('results.html', strength_message=strength_message[result['strength']],
                                is_pwned=result['pwned'])
+
+@app.route('/help')
+def help():
+    return render_template('help.html')
 
 
 if __name__ == '__main__':

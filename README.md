@@ -4,7 +4,7 @@ Created by Mathis DA SILVA
 ---
 
 ## Introduction 
-
+---
 I created this project to see if our passwords are strong and safe. So, I develope this project in 3 phases.
 The first represent the base of the project. We find all aspects of password: validity, strrength and entropy. The second add a new fonctionality to know if it is pwned. The third is a web application with Flask.
 ---

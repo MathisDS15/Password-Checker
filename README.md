@@ -1,6 +1,7 @@
 # Password-Checker
+
 Created by Mathis DA SILVA
----
+
 
 ## Introduction 
 I created this project to see if our passwords are strong and safe. So, I develope this project in 3 phases.

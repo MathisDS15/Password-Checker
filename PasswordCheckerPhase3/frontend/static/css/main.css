@@ -112,7 +112,7 @@ body {
     margin: 20px 10px;
 }
 
-.strength h3 {
+.strength h3, .leaked h3, .entropy h3 {
     margin: 5px 10px;
 }
 
@@ -124,20 +124,12 @@ body {
     margin: 20px 10px;
 }
 
-.leaked h3 {
-    margin: 5px 10px;
-}
-
 .entropy {
     width: 600px;
     background: linear-gradient(to right, rgba(107,132,157,0.8), rgba(1,59,80,0.9));
     border-radius: 12px;
     padding: 2px 0 5px 0;
     margin: 20px 10px;
-}
-
-.entropy h3 {
-    margin: 5px 10px;
 }
 
 .back-button {
@@ -154,6 +146,11 @@ body {
 
 .back-button:hover {
     background: linear-gradient(to right, rgba(1,59,80,0.9), rgba(107,132,157,0.8));
+}
+
+.strength p, .leaked p, .entropy p {
+    font-size: 16px;
+    margin: 0 10px;
 }
 
 #footer {

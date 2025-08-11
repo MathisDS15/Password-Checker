@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, redirect
+from flask import Flask, render_template, request
 from PasswordCheckerPhase3.backend.passwordCheckerPhase3 import passwordChecker
 
 
@@ -15,15 +15,19 @@ def check_password():
         result = passwordChecker(password)
 
         strength_message = {
-            "Verry Strong": "Your password is very strong. Excellent choice!",
+            "Very strong": "Your password is very strong. Excellent choice!",
             "Strong": "Your password is strong. Good job!",
             "Medium": "Your password is medium. Consider making it stronger.",
             "Weak": "Your password is weak. Please consider improving it.",
-            "Very Weak": "Your password is very weak. It needs significant improvement."
+            "Very weak": "Your password is very weak. It needs significant improvement."
         }
 
-        return render_template('results.html', strength_message=strength_message[result['strength']],
-                               is_pwned=result['pwned'])
+        return render_template('results.html',
+                               strength=result['strength'],
+                               strength_message=strength_message[result['strength']],
+                               is_pwned=result['pwned'],
+                               entropy=result['entropy'])
+
     return render_template('passwordChecker.html')
 
 @app.route('/help')

@@ -105,7 +105,7 @@ def displayPasswordCheck(password : str) -> None:
     print(f"Analyse this password: {password}")
     print(f"Validity: {"Valid" if display["valid"] else "Invalid "}")
     print(f"Strength: {display['strength']}")
-    print(f"Entropy: {display['entropy']}")
+    print(f"Entropy: {display['entropy']:.3f}")
     print (f"Pwned: {'Yes' if display['pwned'] else 'No'}\n\n")
 
 displayPasswordCheck("da3de5_!jeff")

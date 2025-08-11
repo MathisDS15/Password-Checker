@@ -5,8 +5,10 @@ Created by Mathis DA SILVA
 
 ## Introduction 
 ---
+
 I created this project to see if our passwords are strong and safe. So, I develope this project in 3 phases.
 The first represent the base of the project. We find all aspects of password: validity, strrength and entropy. The second add a new fonctionality to know if it is pwned. The third is a web application with Flask.
+
 ---
 
 ## Password Checker Phase 1
@@ -36,6 +38,10 @@ This phase is a web application built with Flask.
 You can check your password directly in your browser with a simple and accessible interface.
 
 **How to use:**
+
+- Run the script 'app.py' in your terminal.
+- Open your browser and put this http://127.0.0.1:5000/ (example)
+- Now, you can test our passwords
 
 ---
 
